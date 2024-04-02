@@ -21,6 +21,7 @@ import Box from "@mui/material/Box";
 // react-icons imports
 import { GrUndo } from "react-icons/gr";
 import { FaMapMarkedAlt } from "react-icons/fa";
+//eslint-disable-next-line
 import { LuSettings2 } from "react-icons/lu";
 import { FaMinus } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
@@ -59,10 +60,12 @@ function OnboardPopup() {
   const [imgOffset, setImgOffset] = useState({ x: 0, y: 0 }); // Img dist. from left wrt VP
   const [startPos, setStartPos] = useState({ x: 0, y: 0 }); // Box starts drawing from
   const [endPos, setEndPos] = useState({ x: 0, y: 0 }); // Box stops drawing at
+  //eslint-disable-next-line
   const [bayId, setBayId] = useState(0); // Bay Number
   // const [predBoxes, setPredBoxes] = useState([]);
   const [boxProps, setBoxProps] = useState([]); // Stores the data to print the annotations
   const [scaledBoxProps, setScaledBoxProps] = useState([]); // Stores the annotation data to be sent through the API call
+  //eslint-disable-next-line
   const [hoveredBoxId, setHoveredBoxId] = useState(null); // Stores the ID of the Hovered bay
   const [popoverData, setPopoverData] = useState({});
   const [isAscendingOrder, setIsAscendingOrder] = useState(null);

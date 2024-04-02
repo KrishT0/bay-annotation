@@ -11,6 +11,7 @@ const MainComponent2 = () => {
   const [imgSize, setImgSize] = useState({ width: 0, height: 0 });
   const imgOnLoad = () => {
     const imgDiv = imgRef.current;
+    //eslint-disable-next-line
     const { width, height, left, top } = imgDiv.getBoundingClientRect();
     setImgSize({ ...imgSize, width: width, height: height });
     console.log(imgDiv.getBoundingClientRect().height);

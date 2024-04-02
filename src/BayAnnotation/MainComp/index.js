@@ -1,4 +1,5 @@
 import { React, useState, useRef } from "react";
+//eslint-disable-next-line
 import PropTypes from "prop-types";
 
 // assets
@@ -7,23 +8,28 @@ import floorLayoutImage from "../../assets/floor_layout.jpg";
 
 function MainComp() {
   const imageRef = useRef(null);
+  //eslint-disable-next-line
   const [realDimension, setRealDimension] = useState({
     width: 0,
     height: 0,
   });
+  //eslint-disable-next-line
   const [plottedDimensions, setPlottedDimensions] = useState({
     width: 0,
     height: 0,
   });
   const [drawing, setDrawing] = useState(false);
   const [imgSize, setImgSize] = useState({ width: 0, height: 0 });
+  //eslint-disable-next-line
   const [imgOffset, setImgOffset] = useState({ x: 0, y: 0 });
   const [startPos, setStartPos] = useState({ x: 0, y: 0 });
   const [endPos, setEndPos] = useState({ x: 0, y: 0 });
   const [bayId, setBayId] = useState(0);
   // const [editPredBoxes, setEditPredBoxes] = useState([]);
   const [boxProps, setBoxProps] = useState([]);
+  //eslint-disable-next-line
   const [scaledBoxProps, setScaledBoxProps] = useState([]);
+  //eslint-disable-next-line
   const [hoveredBoxId, setHoveredBoxId] = useState(null);
 
   //Find real, rendered dimensions & offset wrt VP of the image

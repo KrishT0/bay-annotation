@@ -12,7 +12,7 @@ export default function GaugeChart() {
   };
 
   console.log("Value", parentToggleValue);
-
+//eslint-disable-next-line
   const generateRandomNumbers = () => {
     const newRandomNumbers = [];
     for (let i = 0; i < 3; i++) {
